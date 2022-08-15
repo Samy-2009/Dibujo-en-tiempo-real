@@ -38,7 +38,9 @@ function gotPoses(results){
 
 function draw(){
     background('#FFF7CD');
+
+    document.getElementById("square_side").innerHTML = "El ancho y el alto del cuadrado será= "+ difference + "px";
     fill('tomato');
     stroke('tomato');
-    square(noseX, noseY, 100);
+    square(noseX, noseY, difference);
 }
